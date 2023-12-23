@@ -1,9 +1,7 @@
 <section class="container">
   <header class="header d-flex">
-    <h2 class="ff-inter">Meu Mural</h2>
-    <button routerLink="/createThought" class="botao">
-      Adicionar pensamento
-    </button>
+    <h2 class="ff-inter">My Mural</h2>
+    <button routerLink="/createThought" class="botao">Add Thought</button>
   </header>
   <div class="mural" *ngIf="thoughts.length > 0; else noThought">
     <div *ngFor="let thought of thoughts">

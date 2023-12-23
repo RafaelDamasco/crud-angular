@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Thought } from '../thought';
 import { ThoughtService } from '../thought.service';
 import { Router } from '@angular/router';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-thought',
@@ -14,6 +15,10 @@ export class CreateThoughtComponent implements OnInit {
     author: '',
     model: '',
   };
+
+  form!: FormGroup;
+
+  
   constructor(private service: ThoughtService, private router: Router) {}
 
   ngOnInit(): void {}
