@@ -25,7 +25,6 @@ export class EditThoughtComponent implements OnInit {
     this.service.findById(parseInt(id!)).subscribe((thought) => {
       this.thought = thought;
     });
-    console.log('AAAAAAAAAAA', this.route.snapshot.paramMap);
   }
 
   updateThought() {

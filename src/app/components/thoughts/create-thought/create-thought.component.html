@@ -11,6 +11,14 @@
       formControlName="content"
       placeholder="Digite o pensamento"
     />
+
+    <div
+      class="mensagem__erro"
+      *ngIf="form.get('content')?.errors && form.get('content')?.touched"
+    >
+      Thought is required
+    </div>
+
     <label for="autoria">Autoria ou fonte</label>
     <input
       type="text"
@@ -19,6 +27,20 @@
       formControlName="author"
       placeholder="Digite a autoria ou fonte"
     />
+
+    <div
+      class="mensagem__erro"
+      *ngIf="form.get('author')?.errors?.['required'] && form.get('author')?.touched"
+    >
+      Author is required
+    </div>
+    <div
+      class="mensagem__erro"
+      *ngIf="form.get('author')?.errors?.['minlength'] && form.get('author')?.touched"
+    >
+      Author must have at least 3 characters
+    </div>
+
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
