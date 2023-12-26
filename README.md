@@ -1,5 +1,5 @@
 
-![Logo do projeto](https://imgur.com/hH3Vlcu.png)
+![Memoteca](https://imgur.com/742m9CM.png)
 
 # Memoteca
 
@@ -26,9 +26,7 @@ Codigo, exemplos
 
 
 
-## 📦 Tecnologias usadas:
-
-Coloque aqui as ferramentas que você usou para criar seu projeto, exemplo:
+## 📦 Technologies:
 
 * ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 * ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
