@@ -1,15 +1,15 @@
 <section class="container criar-pensamentos ff-inter">
   <header class="header">
-    <h2>Adicione um <br />pensamento novo:</h2>
+    <h2>Add a <br />new Thought:</h2>
   </header>
   <form [formGroup]="form">
-    <label for="pensamento">Pensamento</label>
+    <label for="pensamento">Thought</label>
     <input
       type="textarea"
       class="input"
       id="pensamento"
       formControlName="content"
-      placeholder="Digite o pensamento"
+      placeholder="Type a thought"
     />
 
     <div
@@ -19,13 +19,13 @@
       Thought is required
     </div>
 
-    <label for="autoria">Autoria ou fonte</label>
+    <label for="autoria">Author or Source</label>
     <input
       type="text"
       class="input"
       id="autoria"
       formControlName="author"
-      placeholder="Digite a autoria ou fonte"
+      placeholder="Type author or source"
     />
 
     <div
@@ -41,7 +41,7 @@
       Author must have at least 3 characters
     </div>
 
-    <label for="modelo">Selecione o modelo do card:</label>
+    <label for="modelo">Select a card model:</label>
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
@@ -54,9 +54,9 @@
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Model 1</span>
         </label>
-        Prévia:
+        Preview:
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/images/modelo1.png" alt="Aspas azuis" />
           <p class="conteudo">{{ form.get("content")?.value }}</p>
@@ -76,9 +76,9 @@
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 2</span>
+          <span>Model 2</span>
         </label>
-        Prévia:
+        Preview:
         <div class="modelo modelo2 ff-roboto-mono">
           <img
             src="../../../../assets/images/modelo2.png"
@@ -101,9 +101,9 @@
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 3</span>
+          <span>Model 3</span>
         </label>
-        Prévia:
+        Preview:
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/images/modelo3.png" alt="Aspas verdes" />
           <p class="conteudo">{{ form.get("content")?.value }}</p>
@@ -114,8 +114,14 @@
       </div>
     </div>
     <div class="acoes">
-      <button (click)="createThought()" class="botao">Salvar</button>
-      <button (click)="cancel()" class="botao">Cancelar</button>
+      <button
+        [disabled]="!form.valid"
+        (click)="createThought()"
+        [ngClass]="enableButton()"
+      >
+        Save
+      </button>
+      <button (click)="cancel()" class="botao">Cancelr</button>
     </div>
   </form>
 </section>
