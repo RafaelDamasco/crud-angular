@@ -13,7 +13,7 @@ export class ThoughtComponent implements OnInit {
     content: '',
     author: '',
     model: '',
-    fav: false,
+    favourite: false,
   };
 
   constructor(private service: ThoughtService) {}
@@ -28,13 +28,13 @@ export class ThoughtComponent implements OnInit {
   }
 
   changeFavouriteIcon() {
-    if (this.thought.fav === false) {
+    if (this.thought.favourite === false) {
       return 'inativo';
     }
     return 'ativo';
   }
 
   updateFavourites() {
-    this.service.updateFav(this.thought).subscribe();
+    this.service.updateFavoutire(this.thought).subscribe();
   }
 }

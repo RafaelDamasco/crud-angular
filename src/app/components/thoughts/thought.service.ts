@@ -33,8 +33,8 @@ export class ThoughtService {
     return this.http.put<Thought>(url, thought);
   }
 
-  updateFav(thought: Thought): Observable<Thought> {
-    thought.fav = !thought.fav;
+  updateFavoutire(thought: Thought): Observable<Thought> {
+    thought.favourite = !thought.favourite;
     return this.update(thought);
   }
 
