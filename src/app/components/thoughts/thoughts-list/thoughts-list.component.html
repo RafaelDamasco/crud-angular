@@ -11,9 +11,9 @@
       />
       <img src="/assets/images/lupa.png" alt="Filter icon" />
     </div>
-    <h2 class="ff-inter">My Mural</h2>
+    <h2 class="ff-inter">{{ title }}</h2>
     <div class="botoes">
-      <button class="botao">My Mural</button>
+      <button class="botao" (click)="reloadComponent()">My Mural</button>
       <button class="botao" (click)="listFavourites()">My Favourites</button>
       <button routerLink="/createThought" class="botao">Add Thought</button>
     </div>
