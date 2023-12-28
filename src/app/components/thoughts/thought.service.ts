@@ -10,7 +10,11 @@ export class ThoughtService {
   private readonly API = 'http://localhost:3000/pensamentos';
   constructor(private http: HttpClient) {}
 
-  list(page: number, filter?: string): Observable<Thought[]> {
+  list(
+    page: number,
+    filter: string,
+    favourite: boolean
+  ): Observable<Thought[]> {
     const itensPerPage = 6;
 
     let params = new HttpParams()
@@ -20,20 +24,8 @@ export class ThoughtService {
     if (filter && filter.trim().length > 2) {
       params = params.set('q', filter);
     }
-
-    return this.http.get<Thought[]>(this.API, { params });
-  }
-
-  listFavouriteThoughts(page: number, filter?: string): Observable<Thought[]> {
-    const itensPerPage = 6;
-
-    let params = new HttpParams()
-      .set('_page', page)
-      .set('_limit', itensPerPage)
-      .set('favourite', true);
-
-    if (filter && filter.trim().length > 2) {
-      params = params.set('q', filter);
+    if (favourite) {
+      params = params.set('favourite', true);
     }
 
     return this.http.get<Thought[]>(this.API, { params });
