@@ -24,6 +24,21 @@ export class ThoughtService {
     return this.http.get<Thought[]>(this.API, { params });
   }
 
+  listFavouriteThoughts(page: number, filter?: string): Observable<Thought[]> {
+    const itensPerPage = 6;
+
+    let params = new HttpParams()
+      .set('_page', page)
+      .set('_limit', itensPerPage)
+      .set('favourite', true);
+
+    if (filter && filter.trim().length > 2) {
+      params = params.set('q', filter);
+    }
+
+    return this.http.get<Thought[]>(this.API, { params });
+  }
+
   create(thought: Thought): Observable<Thought> {
     return this.http.post<Thought>(this.API, thought);
   }
