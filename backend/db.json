@@ -12,7 +12,7 @@
       "content": "Learning Angular, this is my first CRUD",
       "author": "Rafael Damasco",
       "model": "modelo2",
-      "favourite": true
+      "favourite": false
     },
     {
       "id": 3,

@@ -13,6 +13,7 @@ export class ListThoughtsComponent implements OnInit {
   thereIsMoreThoughts: boolean = true;
   filter: string = '';
   favourite: boolean = false;
+  favourites: Thought[] = [];
 
   constructor(private service: ThoughtService) {}
 
@@ -53,6 +54,7 @@ export class ListThoughtsComponent implements OnInit {
       .list(this.actualPage, this.filter, this.favourite)
       .subscribe((favouritesThoughts) => {
         this.thoughts = favouritesThoughts;
+        this.favourites = favouritesThoughts;
       });
   }
 }

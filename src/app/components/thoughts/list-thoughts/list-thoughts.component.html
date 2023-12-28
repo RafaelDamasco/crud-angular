@@ -20,7 +20,7 @@
   </header>
   <div class="mural" *ngIf="thoughts.length > 0; else noThought">
     <div *ngFor="let thought of thoughts">
-      <app-thought [thought]="thought"></app-thought>
+      <app-thought [thought]="thought" [favourites]="favourites"></app-thought>
     </div>
   </div>
 </section>
