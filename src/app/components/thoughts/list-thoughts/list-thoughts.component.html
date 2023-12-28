@@ -1,5 +1,13 @@
 <section class="container">
   <header class="header d-flex">
+    <div class="buscar-pensamentos">
+      <input
+        type="search"
+        class="filtro"
+        placeholder="What are you looking for?"
+        [(ngModel)]="filter"
+      />
+    </div>
     <h2 class="ff-inter">My Mural</h2>
     <button routerLink="/createThought" class="botao">Add Thought</button>
   </header>
