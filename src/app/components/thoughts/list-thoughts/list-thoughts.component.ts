@@ -29,4 +29,12 @@ export class ListThoughtsComponent implements OnInit {
       }
     });
   }
+
+  searchThoughts() {
+    this.actualPage = 1;
+    this.thereIsMoreThoughts = true;
+    this.service.list(this.actualPage, this.filter).subscribe((thoughts) => {
+      this.thoughts = thoughts;
+    });
+  }
 }

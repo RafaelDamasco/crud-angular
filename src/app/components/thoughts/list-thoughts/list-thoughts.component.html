@@ -5,7 +5,9 @@
         type="search"
         class="filtro"
         placeholder="What are you looking for?"
+        autofocus
         [(ngModel)]="filter"
+        (keyup)="searchThoughts()"
       />
     </div>
     <h2 class="ff-inter">My Mural</h2>
