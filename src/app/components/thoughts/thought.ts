@@ -3,4 +3,5 @@ export interface Thought {
   content: string;
   author: string;
   model: string;
+  fav: boolean;
 }

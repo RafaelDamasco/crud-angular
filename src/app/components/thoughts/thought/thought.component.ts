@@ -12,6 +12,7 @@ export class ThoughtComponent implements OnInit {
     content: '',
     author: '',
     model: '',
+    fav: false,
   };
 
   constructor() {}
@@ -23,5 +24,12 @@ export class ThoughtComponent implements OnInit {
       return 'pensamento-g';
     }
     return 'pensamento-p';
+  }
+
+  changeFavIcon() {
+    if (this.thought.fav === false) {
+      return 'inativo';
+    }
+    return 'ativo';
   }
 }
