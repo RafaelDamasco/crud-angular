@@ -11,10 +11,12 @@
     <b>{{ thought.author }}</b>
   </p>
   <div class="acoes">
-    <button class="botao-favorito">
+    <button class="botao-favorito" (click)="updateFavourites()">
       <img
-        src="../../../../assets/images/icone-favorito-{{ changeFavIcon() }}.png"
-        alt="Ícone fav {{ changeFavIcon() }}"
+        src="../../../../assets/images/icone-favorito-{{
+          changeFavouriteIcon()
+        }}.png"
+        alt="Ícone fav {{ changeFavouriteIcon() }}"
       />
     </button>
     <button class="botao-editar">
