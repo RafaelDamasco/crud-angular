@@ -43,12 +43,12 @@ export class EditThoughtComponent implements OnInit {
 
   updateThought() {
     this.service.update(this.form.value).subscribe(() => {
-      this.router.navigate(['/listThought']);
+      this.router.navigate(['/thoughtList']);
     });
   }
 
   cancel() {
-    this.router.navigate(['/listThought']);
+    this.router.navigate(['/thoughtList']);
   }
 
   enableButton = (): string => {

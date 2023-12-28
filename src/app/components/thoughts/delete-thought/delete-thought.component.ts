@@ -33,12 +33,12 @@ export class DeleteThoughtComponent implements OnInit {
   deleteThought() {
     if (this.thought.id) {
       this.service.delete(this.thought.id).subscribe(() => {
-        this.router.navigate(['/listThought']);
+        this.router.navigate(['/thoughtList']);
       });
     }
   }
 
   cancel() {
-    this.router.navigate(['/listThought']);
+    this.router.navigate(['/thoughtList']);
   }
 }

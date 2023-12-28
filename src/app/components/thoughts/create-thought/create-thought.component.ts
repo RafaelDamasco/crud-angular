@@ -39,13 +39,13 @@ export class CreateThoughtComponent implements OnInit {
   createThought = () => {
     if (this.form.valid) {
       this.service.create(this.form.value).subscribe(() => {
-        this.router.navigate(['/listThought']);
+        this.router.navigate(['/thoughtList']);
       });
     }
   };
 
   cancel = () => {
-    this.router.navigate(['/listThought']);
+    this.router.navigate(['/thoughtList']);
   };
 
   enableButton = (): string => {

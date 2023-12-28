@@ -3,11 +3,11 @@ import { Thought } from '../thought';
 import { ThoughtService } from '../thought.service';
 
 @Component({
-  selector: 'app-list-thoughts',
-  templateUrl: './list-thoughts.component.html',
-  styleUrls: ['./list-thoughts.component.css'],
+  selector: 'app-thoughts-list',
+  templateUrl: './thoughts-list.component.html',
+  styleUrls: ['./thoughts-list.component.css'],
 })
-export class ListThoughtsComponent implements OnInit {
+export class ThoughtsListComponent implements OnInit {
   thoughts: Thought[] = [];
   actualPage: number = 1;
   thereIsMoreThoughts: boolean = true;
