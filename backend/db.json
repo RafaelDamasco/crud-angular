@@ -9,60 +9,24 @@
     },
     {
       "id": 2,
-      "content": "Learning Angular, this is my first CRUD",
+      "content": "If you want you can favorite a thought!",
       "author": "Rafael Damasco",
-      "model": "modelo2",
-      "favourite": false
+      "model": "modelo3",
+      "fav": false
     },
     {
       "id": 3,
-      "content": "Angular is the best! Hello World",
+      "content": "Learning Angular, this is my first CRUD",
       "author": "Dev Rafael D.",
-      "model": "modelo3",
-      "favourite": true
-    },
-    {
-      "id": 4,
-      "content": "asdsa",
-      "author": "asdsadsa",
       "model": "modelo2",
-      "favourite": false
+      "fav": false
     },
     {
-      "id": 5,
-      "content": "12312321",
-      "author": "12312312312",
-      "model": "modelo2",
-      "favourite": false
-    },
-    {
-      "id": 6,
-      "content": "1231231232131",
-      "author": "1231232131232131",
-      "model": "modelo2",
-      "favourite": false
-    },
-    {
-      "id": 7,
-      "content": "aaaaaaaaaaaaaaaa",
-      "author": "aaaaaaaaaaaa",
-      "model": "modelo2",
-      "favourite": false
-    },
-    {
-      "id": 8,
-      "content": "asdsadsad",
-      "author": "asdasdsa",
-      "model": "modelo2",
-      "favourite": false
-    },
-    {
-      "content": "asdasdsad",
-      "author": "rafael",
+      "content": "Search your thought",
+      "author": "R. Damasco",
       "model": "modelo2",
       "fav": false,
-      "id": 9,
-      "favourite": false
+      "id": 4
     }
   ]
 }

@@ -32,7 +32,7 @@ export class CreateThoughtComponent implements OnInit {
         Validators.compose([Validators.required, Validators.minLength(3)]),
       ],
       model: ['modelo2'],
-      fav: [false],
+      favourite: [false],
     });
   }
 
