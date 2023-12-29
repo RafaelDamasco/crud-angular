@@ -1,5 +1,4 @@
-
-![Memoteca](https://imgur.com/742m9CM.png)
+![Memoteca](https://imgur.com/2qhucXM.png)
 
 # Memoteca
 
