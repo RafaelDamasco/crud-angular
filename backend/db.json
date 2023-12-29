@@ -12,20 +12,20 @@
       "content": "If you want you can favorite a thought!",
       "author": "Rafael Damasco",
       "model": "modelo3",
-      "fav": false
+      "favourite": false
     },
     {
       "id": 3,
       "content": "Learning Angular, this is my first CRUD",
       "author": "Dev Rafael D.",
       "model": "modelo2",
-      "fav": false
+      "favourite": false
     },
     {
       "content": "Search your thought",
       "author": "R. Damasco",
       "model": "modelo2",
-      "fav": false,
+      "favourite": false,
       "id": 4
     }
   ]
